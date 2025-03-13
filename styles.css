@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #005843;
+    box-shadow: 0 2px 4px #0000001a;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight:500;
+    color: #fff;
+    margin: 0px 90px;
+}
+
+nav ul {
+    font-size: 18px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    color: #dcdcdc;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.login-button{
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-button:hover {
+    color: #dcdcdc;
+}
+
+.register-button {
+    padding: 10px 20px;
+    background-color: #73E5FF;
+    color: #005843;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #005843;
+    color: #fff;
+}
+
+.hero h1 {
+    font-weight: 450;
+    font-size: 95px;
+    margin-bottom: 20px;
+    line-height: 1;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding: 0px 100px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.button.primary {
+    background-color: #FFE51D;
+    color: #005843;
+}
+
+.button.secondary {
+    border: 2px solid #FFE51D;
+    background-color: transparent;
+    color: #FFE51D;
+}
+
+.phone-number{
+    position: absolute;
+    bottom: 30px;
+    left: 100px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.effortless {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+.effortless h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.effortless p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.effortless .images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.effortless .images img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.integration {
+    padding: 60px 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.integration-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.integration-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.integration h2 {
+    font-weight: 400;
+    font-size: 55px;
+    margin-bottom: 30px;
+    text-align: left;
+    line-height: 1.1;
+}
+.integration p {
+    color: #8c8c8c;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-right: 80px;
+}
+
+.integration ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.integration ul li {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.side-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.side-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Sección de Video Chat */
+.video-chat {
+    padding: 60px 20px;
+    margin: 100px;
+    background-color: #fff;
+    color: #000000;
+}
+
+.video-chat-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 20px; /* Espacio para la imagen */
+}
+
+.video-chat-text-left {
+    flex: 1;
+}
+
+.video-chat-text-left h2 {
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.video-chat-text-right {
+    flex: 1;
+}
+
+.video-chat-text-right p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding-left: 100px;
+    color: #8c8c8c;
+}
+
+.video-chat-image {
+    text-align: center; /* Centrar la imagen */
+}
+
+.video-chat-image img {
+    width: 100%;
+    max-width: 1200px; /* Ajusta según el tamaño deseado */
+    height: auto;
+    border-radius: 10px;
+}
