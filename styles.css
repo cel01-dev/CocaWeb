@@ -130,26 +130,9 @@ nav ul li a:hover {
     color: #333;
 }
 
-.effortless h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
 .effortless p {
     font-size: 18px;
     margin-bottom: 30px;
-}
-
-.effortless .images {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.effortless .images img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
 }
 
 .integration {
@@ -213,47 +196,135 @@ nav ul li a:hover {
 
 /* Sección de Video Chat */
 .video-chat {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
     padding: 60px 20px;
     margin: 100px;
-    background-color: #fff;
-    color: #000000;
+    background-color: white;
 }
 
-.video-chat-content {
+.text-container {
     display: flex;
     justify-content: space-between;
     text-align: left;
-    margin-bottom: 20px; /* Espacio para la imagen */
-}
-
-.video-chat-text-left {
-    flex: 1;
-}
-
-.video-chat-text-left h2 {
-    font-weight: 500;
-    font-size: 40px;
+    align-items: center;
     margin-bottom: 20px;
 }
 
-.video-chat-text-right {
+.text-left {
     flex: 1;
+    max-width: 60%;
 }
 
-.video-chat-text-right p {
-    font-size: 18px;
-    margin-bottom: 30px;
+.text-left h2 {
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.text-right {
+    flex: 1;
+    max-width: 40%;
+}
+
+.text-right p {
+    font-size: 20px;
     padding-left: 100px;
     color: #8c8c8c;
 }
 
-.video-chat-image {
-    text-align: center; /* Centrar la imagen */
+
+/* Imagen y video */
+.video-container {
+    position: relative;
+    text-align: center;
+    
 }
 
-.video-chat-image img {
+.video-thumbnail {
     width: 100%;
-    max-width: 1200px; /* Ajusta según el tamaño deseado */
-    height: auto;
+    max-width: 1700px; 
     border-radius: 10px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chat-bubble {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    height: 115px;
+    width: 380px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.chat-bubble img{
+    width: 65px;
+}
+
+.chat-text{
+    font-weight: 400;
+    font-size: 14px;
+    flex:1;
+    text-align: left;
+}
+.highlight {
+    color: #0073ff;
+}
+.chat-text p{
+    margin-bottom: 10px;
+}
+
+.chat-hour{
+    align-self: flex-start;
+    color: #939393;
+    font-size: 12px;
+}
+
+/* Sección Inferior */
+.section-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #004d40;
+    color: white;
+}
+
+.metrics {
+    display: flex;
+    gap: 40px;
+    margin-top: 15px;
+}
+
+.metrics h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.metrics p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* Imagen del Chat */
+.chat-interface img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
