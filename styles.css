@@ -232,8 +232,8 @@ nav ul li a:hover {
 }
 
 .side-image img {
-    width: 100%;
     max-width: 500px;
+    width: 100%;
     height: auto;
     object-fit: contain;
     border-radius: 27px;
@@ -243,12 +243,27 @@ nav ul li a:hover {
 
 /* Sección de Video Chat */
 .video-chat {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
     padding: 60px 20px;
-    margin: 80px 100px;
+    margin: 80px 100px 0 100px;
     background-color: white;
+    z-index: 2;
+}
+
+.video-chat::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: -100px;
+    width: 115%;
+    height: 36%;
+    background-color: #005843; 
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
 }
 
 .text-container {
@@ -289,8 +304,8 @@ nav ul li a:hover {
 }
 
 .video-thumbnail {
-    width: 100%;
-    max-width: 1250px; 
+    width: 1250px; 
+    height: 595px;
     border-radius: 10px;
 }
 
@@ -299,10 +314,9 @@ nav ul li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
-    padding: 15px;
+    background: rgba(255, 255, 255, 0.526);
+    padding: 30px;
     border-radius: 50%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 20px;
     cursor: pointer;
 }
@@ -343,18 +357,44 @@ nav ul li a:hover {
     font-size: 12px;
 }
 
-/* Sección Inferior */
-.section-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    background-color: #004d40;
+/* Sección Orders */
+.orders {
+    position: relative; /* Asegura que el fondo de la parte superior se vea bien */
+    background-color: #005843;
     color: white;
+    padding: 100px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.orders-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    flex: 1;
+    width: 60%;
+}
+
+.orders-text h2 {
+    font-weight: 500;
+    font-size: 57px;
+    margin-bottom: 15px;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.orders-text p {
+    font-size: 22px;
+    color: #ddd;
+    margin-bottom: 40px;
+    text-align: left;
 }
 
 .metrics {
     display: flex;
+    justify-content: center;
     gap: 40px;
     margin-top: 15px;
 }
@@ -370,8 +410,18 @@ nav ul li a:hover {
 }
 
 /* Imagen del Chat */
+.chat-interface {
+    display: flex;
+    flex: 1;
+    width: 40%;
+    justify-content: center;
+}
+
 .chat-interface img {
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 27px;
+    background-color: transparent;
 }
