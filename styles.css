@@ -581,6 +581,7 @@ nav ul li a:hover {
 
 /*--------SECTION PRICING--------*/
 .pricing-title {
+    text-align: center;
     font-size: 44px;
     font-weight: bold;
     color: #0f172a;
@@ -588,9 +589,9 @@ nav ul li a:hover {
 }
 
 .pricing-subtitle {
+    margin: 10px auto;
     font-size: 18px;
     color: #6b7280;
-    margin: 10px auto 40px;
     max-width: 600px;
 }
 
@@ -626,24 +627,23 @@ nav ul li a:hover {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.toggle-option.monthly.active {
+.toggle-option.mensual.active {
     background-color: #005843;
     color: #fff;
 }
 
-.toggle-option.yearly {
+.toggle-option.mensual {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
     background-color: #fff;
     color: #757575;
 }
 
-.toggle-option.monthly {
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-}
-
-.toggle-option.yearly {
+.toggle-option.anual {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    background-color: #fff;
+    color: #757575;
 }
 
 /* Contenedor de tarjetas */
@@ -724,11 +724,11 @@ nav ul li a:hover {
 
 /* Botón de plan */
 .plan-btn {
-    background: #005843;
-    color: white;
+    background: #ebf2f0;
+    color: #005843;
     border: none;
     padding: 14px 28px;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 18px;
     transition: 0.3s;
@@ -747,6 +747,11 @@ nav ul li a:hover {
 .website {
     background: #ffffff;
     padding: 60px 20px;
+}
+
+.website-text{
+    justify-content: center;
+    text-align: center;
 }
 
 .website-text h2 {
