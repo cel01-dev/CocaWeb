@@ -14,6 +14,8 @@ Este es un proyecto de una landing page para un servicio de soporte en tiempo re
 - **[Animate.css](https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css)** - Animaciones CSS predefinidas
 
 ## 📂 Estructura del Proyecto
+
+```bash
 📁 CocaWeb
 │── 📁 img 
 │── 📁 img/tools 
@@ -21,6 +23,7 @@ Este es un proyecto de una landing page para un servicio de soporte en tiempo re
 │── 📄 styles.css 
 │── 📄 script.js 
 │── 📄 README.md 
+```
 
 ## Cómo Usar
 
