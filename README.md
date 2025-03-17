@@ -11,7 +11,7 @@ Este es un proyecto de una landing page para un servicio de soporte en tiempo re
 - **HTML5** - Estructura de la página
 - **CSS3** - Estilos y diseño responsivo
 - **JavaScript** - Funcionalidad interactiva
-- **[Animate.css](https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css)** - Animaciones CSS predefinidas
+- **[AOS](https://michalsnik.github.io/aos/)** - Animaciones en scroll
 
 ## 📂 Estructura del Proyecto
 
@@ -21,7 +21,6 @@ Este es un proyecto de una landing page para un servicio de soporte en tiempo re
 │── 📁 img/tools 
 │── 📄 index.html 
 │── 📄 styles.css 
-│── 📄 script.js 
 │── 📄 README.md 
 ```
 
@@ -37,20 +36,15 @@ Este es un proyecto de una landing page para un servicio de soporte en tiempo re
 
     Navega al directorio del proyecto y abre el archivo `index.html` con tu navegador web preferido.
 
-## Instalación
-
-No se requiere instalación adicional para ver la página web. Simplemente abre el archivo `index.html` en un navegador web.
-
 ## Personalización
 
-* **CSS:** Modifica `styles.css` para cambiar la apariencia de la página.
-* **JavaScript:** Añade o modifica `script.js` para incluir funcionalidades interactivas.
-* **Imágenes:** Reemplaza las imágenes en el directorio `img/` para personalizar el contenido visual.
-* **Contenido:** Edita el contenido HTML en `index.html` para cambiar el texto y la información.
+- **CSS:** Modifica `styles.css` para cambiar la apariencia de la página.
+- **Imágenes:** Reemplaza las imágenes en el directorio `img/` para personalizar el contenido visual.
+- **Contenido:** Edita el contenido HTML en `index.html` para cambiar el texto y la información.
 
 ## Dependencias
 
-* **Animate.css:** Se utiliza para animaciones CSS. Asegúrate de que el enlace a la CDN en el `<head>` del HTML esté correcto.
+- **[AOS](https://michalsnik.github.io/aos/)** - Animaciones en scroll.
 
 
 * Proyecto creado por [Celinda DCC](https://github.com/cel01-dev).
