@@ -116,25 +116,21 @@ nav ul li a:hover {
 
 .hero h1 {
     font-weight: 450;
-    font-size: 95px;
+    font-size: 90px;
     margin: 35px 0 20px;
     line-height: 1;
-    max-width: 900px;
+    max-width: 970px;
     margin-left: auto;
     margin-right: auto;
-    animation: slideInLeft;
-    animation-duration: 2s;
 }
 
 .hero p {
     font-size: 20px;
     margin-bottom: 70px;
     padding: 0px 100px;
-    max-width: 600px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
-    animation: slideInLeft;
-    animation-duration: 2s;
 }
 
 .button {
@@ -162,8 +158,6 @@ nav ul li a:hover {
     left: 100px;
     font-size: 14px;
     color: #fff;
-    animation: slideInLeft;
-    animation-duration: 2s;
 }
 
 /*--------SECTION EFFORTLESS--------*/
@@ -192,14 +186,6 @@ nav ul li a:hover {
     width: 55px;
     height: auto;
     grid-column: span 1;
-    animation: fadeInUp;
-    animation-duration: 4s;
-    animation-delay: 1.5s; 
-    opacity: 0; 
-    animation-fill-mode: forwards;
-}
-.empty {
-    visibility: hidden;
 }
 
 /*--------SECTION INTEGRATION--------*/
@@ -594,6 +580,7 @@ nav ul li a:hover {
 }
 
 .pricing-subtitle {
+    text-align: center;
     margin: 10px auto;
     font-size: 18px;
     color: #6b7280;
@@ -684,8 +671,7 @@ nav ul li a:hover {
 .most-popular {
     background: var(--color-secundario);
     color: #000;
-    font-weight: bold;
-    padding: 6px 12px;
+    padding: 7px 14px;
     border: 5px solid #fff;
     border-radius: 20px;
     position: absolute;

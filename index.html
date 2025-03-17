@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coca - Servicio de Soporte en Tiempo Real</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <header>
@@ -38,7 +38,7 @@
 
         <section class="effortless">
             <p>Integración sencilla con tus herramientas favoritas</p>
-            <div class="tools">
+            <div class="tools"  data-aos="fade-down">
                 <img src="img/tools/slack.png" alt="Slack">
                 <img src="img/tools/visualcode.png" alt="Visual Studio Code">
                 <img src="img/tools/spotify.png" alt="Spotify">
@@ -58,7 +58,7 @@
 
         <section class="integration">
             <div class="integration-container">
-                <div class="integration-text">
+                <div class="integration-text" data-aos="zoom-in">
                     <h2>Accede a una solución de mensajería multicanal en un solo lugar</h2>
                     <p>Permite a tus clientes comunicarse sin esfuerzo a través de Live Chat, Facebook, 
                         Telegram y muchas más herramientas, con respuestas rápidas de Coca.</p>
@@ -68,7 +68,7 @@
                         <li>✅ Participa en conversaciones contextuales en movimiento.</li>
                     </ul>
                 </div>
-                <div class="side-image">
+                <div class="side-image" data-aos="fade-up-left">
                     <img src="img/side-image.png" alt="Mensajería Multicanal">
                 </div>
             </div>
@@ -76,11 +76,12 @@
 
         <section class="video-chat">
             <div class="text-container">
-                <div class="text-left">
+                <div class="text-left"  data-aos="fade-down">
                     <h2>Mejora la comunicación con video chat en vivo</h2>
                 </div>
-                <div class="text-right">
-                    <p>La videoconferencia mejora la productividad y fomenta la colaboración, lo que la convierte en una herramienta versátil para lograr estos objetivos.</p>
+                <div class="text-right"  data-aos="fade-down">
+                    <p>La videoconferencia mejora la productividad y fomenta la colaboración, lo que la convierte 
+                        en una herramienta versátil para lograr estos objetivos.</p>
                 </div>
             </div>
             <div class="video-container">
@@ -106,7 +107,7 @@
                     Crea páginas fácilmente con una gran variedad de bloques únicos.
                     Disponemos de una gran variedad de pasajes
                 </p>
-                <div class="metrics">
+                <div class="metrics" data-aos="zoom-in">
                     <div>
                         <h3>9.3K+</h3>
                         <p>Sitios web potenciados</p>
@@ -117,7 +118,7 @@
                     </div>
                 </div>
             </div>
-            <div class="orders-chat">
+            <div class="orders-chat" data-aos="fade-up-left">
                 <img src="img/orders-chat.png" alt="Orders-chat">
             </div>
         </section>   
@@ -144,21 +145,21 @@
                      a la creación o mejora de comunidades entre individuos.</p>
             </div>
             <div class="testimonials">
-                <div class="testimonial-card">
+                <div class="testimonial-card" data-aos="flip-left">
                     <img src="img/user.png" alt="Jhonatan Albert">
                     <h3>Jhonatan Albert</h3>
                     <p class="position">CEO, GoTick</p>
                     <p class="comment">“Son capaces de ayudar a una startup como la mía a escalar y son muy receptivos a todas nuestras necesidades únicas.”</p>
                     <div class="rating">⭐ ⭐ ⭐ ⭐ ⭐ 5.0</div>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card" data-aos="flip-left">
                     <img src="img/user.png" alt="Jhonatan Albert">
                     <h3>Jhonatan Albert</h3>
                     <p class="position">Dueño, Code Dev</p>
                     <p class="comment">“Las ideas creativas de Division of Labor fueron geniales y trabajar con su equipo fue realmente fácil; fueron muy receptivos.”</p>
                     <div class="rating">⭐ ⭐ ⭐ ⭐ ⭐ 5.0</div>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card" data-aos="flip-left">
                     <img src="img/user.png" alt="Jhonatan Albert">
                     <h3>Jhonatan Albert</h3>
                     <p class="position">Cordinador de marketing y oficina</p>
@@ -202,7 +203,7 @@
                     <a class="plan-btn">Elegir plan</a>
                 </div>
                 <div class="pricing-card gold">
-                    <div class="most-popular">MOST POPULAR</div>
+                    <div class="most-popular">MÁS POPULAR</div>
                     <h3 class="plan-name">GOLD</h3>
                     <p class="price">$100 <span>/mes</span></p>
                     <ul class="features">
@@ -282,6 +283,12 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 1500, 
+        once: false, 
+        });
+    </script>
 </body>
 </html>
