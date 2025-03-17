@@ -578,3 +578,167 @@ nav ul li a:hover {
     font-size: 1.2rem;
     color: #ffb400;
 }
+
+/*--------SECTION PRICING--------*/
+.pricing-title {
+    font-size: 44px;
+    font-weight: bold;
+    color: #0f172a;
+    margin-top: 50px;
+}
+
+.pricing-subtitle {
+    font-size: 18px;
+    color: #6b7280;
+    margin: 10px auto 40px;
+    max-width: 600px;
+}
+
+/* Toggle Mensual/Anual */
+.toggle-container{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.toggle {
+    display: inline-block;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.toggle input[type="checkbox"] {
+    display: none;
+}
+
+.toggle label {
+    display: flex;
+    cursor: pointer;
+}
+
+.toggle-option {
+    padding: 10px 20px;
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-option.monthly.active {
+    background-color: #005843;
+    color: #fff;
+}
+
+.toggle-option.yearly {
+    background-color: #fff;
+    color: #757575;
+}
+
+.toggle-option.monthly {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.toggle-option.yearly {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* Contenedor de tarjetas */
+.pricing-cards {
+    justify-content: center;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Tarjetas */
+.pricing-card {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    width: 290px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Destacando la tarjeta central */
+.pricing-card.gold {
+    background: #005843;
+    color: white;
+    position: relative;
+    transform: scale(1.1);
+}
+
+/* Insignia "Most Popular" */
+.most-popular {
+    background: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-style: solid;
+    border: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Títulos y precios */
+.plan-name {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.price span {
+    font-size: 16px;
+    color: #6b7280;
+}
+
+/* Lista de características */
+.features {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.features li {
+    font-size: 16px;
+    margin: 6px 0;
+}
+
+/* Botón de plan */
+.plan-btn {
+    background: #005843;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.plan-btn.gold-btn {
+    background: yellow;
+    color: black;
+}
+
+.plan-btn:hover {
+    background: #002d00;
+}
