@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&display=swap');
 
+:root{
+    --color-principal: #005843;
+    --color-secundario: #ffe51d;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -70,7 +75,7 @@ nav ul li a:hover {
 .register-button {
     padding: 15px 40px;
     background-color: #73E5FF;
-    color: #005843;
+    color: var(--color-principal);
     text-decoration: none;
     border-radius: 40px;
 }
@@ -141,14 +146,14 @@ nav ul li a:hover {
 }
 
 .button.primary {
-    background-color: #FFE51D;
-    color: #005843;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
 }
 
 .button.secondary {
-    border: 2px solid #FFE51D;
+    border: 2px solid var(--color-secundario);
     background-color: transparent;
-    color: #FFE51D;
+    color: var(--color-secundario);
 }
 
 .phone-number{
@@ -281,7 +286,7 @@ nav ul li a:hover {
     left: -100px;
     width: 115.15%;
     height: 36%;
-    background-color: #005843; 
+    background-color: var(--color-principal); 
     background-size: cover;
     background-position: center;
     z-index: -1; 
@@ -505,7 +510,7 @@ nav ul li a:hover {
 
 .button {
     display: inline-block;
-    background: #005843;
+    background: var(--color-principal);
     color: #fff;
     padding: 12px 24px;
     font-size: 1rem;
@@ -546,7 +551,7 @@ nav ul li a:hover {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 15px #0000001a;
     max-width: 300px;
     text-align: center;
 }
@@ -576,7 +581,7 @@ nav ul li a:hover {
 
 .rating {
     font-size: 1.2rem;
-    color: #ffb400;
+    color: var(--color-secundario);
 }
 
 /*--------SECTION PRICING--------*/
@@ -628,7 +633,7 @@ nav ul li a:hover {
 }
 
 .toggle-option.mensual.active {
-    background-color: #005843;
+    background-color: var(--color-principal);
     color: #fff;
 }
 
@@ -669,7 +674,7 @@ nav ul li a:hover {
 
 /* Destacando la tarjeta central */
 .pricing-card.gold {
-    background: #005843;
+    background: var(--color-principal);
     color: white;
     position: relative;
     transform: scale(1.1);
@@ -677,15 +682,14 @@ nav ul li a:hover {
 
 /* Insignia "Most Popular" */
 .most-popular {
-    background: yellow;
-    color: black;
+    background: var(--color-secundario);
+    color: #000;
     font-weight: bold;
     padding: 6px 12px;
-    border-style: solid;
-    border: #fff;
+    border: 5px solid #fff;
     border-radius: 20px;
     position: absolute;
-    top: -12px;
+    top: -30px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -725,7 +729,7 @@ nav ul li a:hover {
 /* Botón de plan */
 .plan-btn {
     background: #ebf2f0;
-    color: #005843;
+    color: var(--color-principal);
     border: none;
     padding: 14px 28px;
     border-radius: 30px;
@@ -735,8 +739,8 @@ nav ul li a:hover {
 }
 
 .plan-btn.gold-btn {
-    background: yellow;
-    color: black;
+    background: var(--color-secundario);
+    color: #000;
 }
 
 .plan-btn:hover {
@@ -745,7 +749,7 @@ nav ul li a:hover {
 
 /*SECTION WEBSITE*/
 .website {
-    background: #ffffff;
+    background: #fff;
     padding: 60px 20px;
 }
 
@@ -782,32 +786,40 @@ nav ul li a:hover {
 
 /*SECTION FOOTER*/
 footer {
-    background-color: #1A233A; /* Color de fondo oscuro */
+    background: url(img/fondo-c.png); /* Color de fondo oscuro */
     color: white;
-    padding: 40px 20px;
+    
 }
 
 .footer-content {
+    margin: 210px 145px;
+    padding: 100px 0px 0px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .footer-info {
     width: 60%;
     display: flex;
     flex-direction: column;
+    padding-right: 50px;
 }
 
 .footer-info h2 {
-        font-size: 2em;
-        margin-bottom: 20px;
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 
-.info-item {
+.footer-info-item{
     display: flex;
+    gap: 100px; 
+    flex-wrap: wrap;
     align-items: center;
-    margin-bottom:10px;
+}
+.info-item {
+    display: inline-flex;
+    margin:40px 20px 0 0;
+    font-size: 18px;
 }
 
 .info-item .icon {
@@ -819,27 +831,29 @@ footer {
     width: 40%;
     display: inline-flex;
     align-items: start;
-    justify-content: center;
+    justify-content: end;
+    padding-top: 50px;
 }
 
 .project-btn {
-    background-color: #FFEB3B; 
-    color: black;
-    padding: 10px 20px;
+    background-color: var(--color-secundario); 
+    color: var(--color-principal);
+    padding: 15px 25px;
     border: none;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
-
+    font-size: 17px;
 }
 
 .footer-bottom {
+    font-size: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #333; /* Línea divisoria */
+    margin: 0px 145px;
+    padding: 40px 0 ;
+    border-top: 2px solid #1b213f; /* Línea divisoria */
 }
 
 .footer-links a {
