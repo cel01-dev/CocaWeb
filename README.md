@@ -30,7 +30,7 @@ Este es un proyecto de una landing page para un servicio de soporte en tiempo re
 1.  **Clona el repositorio:**
 
     ```bash
-    git clone [https://github.com/cel01-dev/CocaWeb.git](https://github.com/cel01-dev/CocaWeb.git)
+    git clone https://github.com/cel01-dev/CocaWeb.git
     ```
 
 2.  **Abre `index.html` en tu navegador:**
