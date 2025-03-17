@@ -742,3 +742,103 @@ nav ul li a:hover {
 .plan-btn:hover {
     background: #002d00;
 }
+
+/*SECTION WEBSITE*/
+.website {
+    background: #ffffff;
+    padding: 60px 20px;
+}
+
+.website-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0f172a;
+    max-width: 700px;
+    margin: 0 auto 15px;
+}
+
+.website-text p {
+    font-size: 16px;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Botones de descarga */
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.app-button img {
+    width: 150px;
+}
+
+/*SECTION FOOTER*/
+footer {
+    background-color: #1A233A; /* Color de fondo oscuro */
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom:10px;
+}
+
+.info-item .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.footer-btn{
+    width: 40%;
+    display: inline-flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.project-btn {
+    background-color: #FFEB3B; 
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333; /* Línea divisoria */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
